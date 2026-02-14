@@ -50,3 +50,35 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication status: ", authenticationStatus);
+
+//Actividad Servicios Dietetico
+
+//MiembroInscrito
+//Suscriptor
+//NoSuscriptor
+
+let personaCargo = "Empleado";
+
+switch(personaCargo)
+{
+    case "Empleado":
+        console.log("Autorizado a tener acceso a los servicios Dieteticos");
+    break;
+
+    case "MiembroInscrito":
+        console.log("Autorizado a tener acceso a los servicios Dieteticos y a interaccion uno a uno con un dietista");
+    break;
+
+    case "Suscriptor":
+        console.log("está autorizado a tener acceso parcial para facilitar los servicios Dietéticos únicamente.");
+    break;
+
+    case "NoSuscriptor":
+        console.log("Necesita inscribirse para tener acceso al sistema");
+    break;
+
+    default:
+        console.log("No existe el cargo");
+    break;
+}
+
