@@ -17,8 +17,8 @@ console.log(globalLet); // Salida: "También soy global, pero con alcance de let
 console.log(globalConst); // Salida: "Soy una constante global"
 
 //Block Scope
-console.log(blockVar);
-console.log(blockLet);
+//console.log(blockVar);
+//console.log(blockLet);
 
 function show(){
     var funtionVar = "Soy una var con alcance de bloque";
@@ -28,6 +28,9 @@ function show(){
 
 show();
 
-console.log(functionVar); // Lanza ReferenceError
-console.log(functionLet); // Lanza ReferenceError
-console.log(functionConst); // Lanza ReferenceError
+//console.log(functionVar); // Lanza ReferenceError
+//console.log(functionLet); // Lanza ReferenceError
+//console.log(functionConst); // Lanza ReferenceError
+
+functionLet = "Reasigna"; // Esto es la creacion de una variable global implicita, no es la misma variable de la funcion anterior.
+console.log(functionLet);
