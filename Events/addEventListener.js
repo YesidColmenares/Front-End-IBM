@@ -60,3 +60,4 @@ window.addEventListener('resize', function(event){
 window.addEventListener('scroll', function(event){
     console.log('Window scrolled');
 });
+
